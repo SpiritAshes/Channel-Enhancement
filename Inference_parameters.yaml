@@ -1,0 +1,20 @@
+data_path: 'data/'
+weights_path: 'weight/CE_weight'
+image_suffix: '*.png'
+skip: 1
+show_extra: True
+H: 480
+W: 640
+display_scale: 2
+min_length: 2  # Minimum length of point tracks
+max_length: 5  # Maximum length of point tracks
+nms_dist: 4
+conf_thresh: 0.015
+nn_thresh: 0.7
+waitkey: 1
+cuda: True
+display: False
+write: True
+write_dir: 'results/'
+
+
