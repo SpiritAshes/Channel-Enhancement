@@ -1,6 +1,6 @@
-data_path: 'data/'
+data_path: 'data/cam/'
 weights_path: 'weight/CE_weight'
-image_suffix: '*.png'
+image_suffix: '*.jpg'
 skip: 1
 show_extra: True
 H: 480
