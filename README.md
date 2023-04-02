@@ -16,6 +16,8 @@ opencv=3.4.2
 
 ## Running
 
-·python inference.py·
+···
+python inference.py
+···
 
 
