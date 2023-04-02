@@ -16,6 +16,6 @@ opencv=3.4.2
 
 ## Running
 
-<table><tr><td bgcolor=Gainsboro>python inference.py</td></tr></table>
+</>python inference.py
 
 
