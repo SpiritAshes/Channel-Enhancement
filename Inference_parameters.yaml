@@ -13,7 +13,7 @@ conf_thresh: 0.015
 nn_thresh: 0.7
 waitkey: 1
 cuda: True
-display: False
+display: True
 write: True
 write_dir: 'results/'
 
