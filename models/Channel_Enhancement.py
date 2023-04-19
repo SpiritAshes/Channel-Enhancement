@@ -80,8 +80,8 @@ class Channel_Enhancement(torch.nn.Module):
         Head_DD = self.relu(self.bnDD_1(self.convDD_1(x)))
         desc = self.bnDD_2(self.convDD_2(Head_DD))
         desc = desc + x_2
-        dn = torch.norm(desc, p=2, dim=1) # Compute the norm.
-        desc = desc.div(torch.unsqueeze(dn, 1)) # Divide by norm to normalize.
+        dn = torch.norm(desc, p=2, dim=1) 
+        desc = desc.div(torch.unsqueeze(dn, 1)) 
 
         return semi, desc
 
@@ -90,7 +90,7 @@ class Channel_Enhancement(torch.nn.Module):
 def main(weights_path, save_path):
   
   print('==> Loading pre-trained network.')
-  # This class runs the SuperPoint network and processes its outputs.
+  # This class runs the network and processes its outputs.
   net = Channel_Enhancement()
   checkpoint = torch.load(weights_path, map_location=lambda storage, loc: storage)
   net.load_state_dict(checkpoint['model_state_dict'])
